@@ -1,6 +1,3 @@
-// TEST
-console.log('Ciao a tutti!');
-
 // const team = [
 //     {
 //       name: ‘Wayne Barnett’,
@@ -33,3 +30,21 @@ console.log('Ciao a tutti!');
 //       image: ‘barbara-ramos-graphic-designer.jpg’,
 //     },
 // ];
+
+// COLLEGO IL "TEAM-CONTAINER"
+const teamContainer = document.querySelector('.team-container');
+console.log(teamContainer);
+
+// CREO L'ELEMENTO ALL'INTERNO DEL "TEAM-CONTAINER"
+const teamCard = teamContainer.innerHTML =
+`<div class="team-card">
+    <div class="card-image">
+        <img src="" alt="">
+    </div>
+    <div class="card-text">
+      <h3></h3>
+      <p></p>
+    </div>
+</div>`;
+
+console.log(teamCard);
