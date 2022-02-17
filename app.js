@@ -39,21 +39,20 @@ const team = [
 console.log(team);
 
 // CREO CICLO PER GENERARE LE 6 CARD
-for (let i = 0; i < 6; i++) {
+for (let i = 0; i < team.length; i++) {
 
-    // CREO L'ELEMENTO ALL'INTERNO DEL "TEAM-CONTAINER"
+    // CREO LA CARD ALL'INTERNO DEL "TEAM-CONTAINER"
     const card = teamContainer.innerHTML += `
     <div class="team-card">
-    <div class="card-image">
-    <img src="" alt="">
-    </div>
-    <div class="card-text">
-    <h3></h3>
-    <p></p>
-    </div>
+        <div class="card-image">
+            <img src="img/${team[i].image}" alt="${team[i].name}">
+        </div>
+        <div class="card-text">
+            <h3>${team[i].name}</h3>
+            <p>${team[i].role}</p>
+        </div>
     </div>
     `
 
-    console.log(card);
-
+    console.log(team[i]);
 }
